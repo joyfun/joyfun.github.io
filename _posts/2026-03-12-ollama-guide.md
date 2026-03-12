@@ -21,7 +21,7 @@ AI 系列文章将记录我使用 **Ollama** 配合 **OpenClaw** 的探索与实
 
 ```bash
 # 加载 27B 参数的 4bit 量化模型
-ollama pull qwen3.5:27b
+ollama pull jaahas/qwen3.5-uncensored:27b
 ```
 
 **为什么是 27B？**
@@ -55,7 +55,7 @@ ollama pull llava           # 视觉任务fallback
 
 | 场景 | 主模型 | Fallback |
 |-----|--------|----------|
-| 复杂推理 | `qwen3.5:27b` | `qwen3.5:7b` |
+| 复杂推理 | `jaahas/qwen3.5-uncensored:27b` | `qwen3.5:7b` |
 | 快速问答 | `llama3.2:3b` | - |
 | 视觉任务 | `llava` | `bakLLaVA` |
 
@@ -107,7 +107,7 @@ sudo systemctl restart ollama
 
 ```bash
 # 查看当前上下文长度
-ollama run qwen3.5:27b "你当前的上下文窗口大小是多少？" --ctx-size 64000
+ollama run jaahas/qwen3.5-uncensored:27b "你当前的上下文窗口大小是多少？" --ctx-size 64000
 ```
 
 ---
@@ -248,8 +248,8 @@ WantedBy=multi-user.target
 set -e
 
 # 1. 下载模型
-echo "📥 Pulling qwen3.5:27b..."
-ollama pull qwen3.5:27b
+echo "📥 Pulling jaahas/qwen3.5-uncensored:27b..."
+ollama pull jaahas/qwen3.5-uncensored:27b
 
 # 2. 拉取 fallback 模型
 echo "📥 Pulling fallback model..."
@@ -282,7 +282,7 @@ chmod +x ollama-setup.sh
 
 | 配置项 | 推荐值 |
 |-------|--------|
-| 主模型 | `qwen3.5:27b` (4bit) |
+| 主模型 | `jaahas/qwen3.5-uncensored:27b` (4bit) |
 | Fallback 模型 | `qwen3.5:7b` |
 | Context Length | **64000** |
 | 并行数 (`NUM_PARALLEL`) | 1-2（显存紧张时） |
