@@ -8,11 +8,19 @@
 # Site settings
 title: joyfun's blog
 email: joy@example.com
-description: "A personal blog by joyfun"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://joyfun.github.io" # the base hostname & protocol for your site
+description: "A personal blog by joyfun - 记录想法、学习与生活"
+baseurl: ""
+url: "https://joyfun.github.io"
 github_username: joyfun
 
+# Theme
+theme: jekyll-theme-primer
+
 # Build settings
-theme: minima
 markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
