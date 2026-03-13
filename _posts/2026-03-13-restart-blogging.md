@@ -81,21 +81,29 @@ memory/YYYY-MM-DD.md - 每日日志（流水账）
 
 ---
 
-## 四、为什么不选择其他平台？
+## 四、多平台同步策略
 
-| 平台 | 优点 | 缺点 |
+后续考虑同步发布到多个平台：
+
+| 平台 | 定位 | 特点 |
 |------|------|------|
-| 微信公众号 | 用户多 | 封闭生态、审核限制、难以检索 |
-| 知乎 | SEO 好 | 内容被平台控制 |
-| Medium | 体验好 | 国内访问不稳定 |
-| **GitHub Pages** | **完全掌控**、版本管理、免费 | 需要技术背景 |
+| **GitHub Pages** | 主站 | 完全掌控、版本管理、长期存档 |
+| 微信公众号 | 触达读者 | 用户基数大、社交传播 |
+| 知乎 | SEO 优化 | 搜索引擎收录好、专业讨论 |
+| 小红书 | 生活化 | 视觉呈现、年轻用户群体 |
 
-选择 GitHub Pages + Jekyll 是因为：
+### 为什么以 GitHub Pages 为主？
 
-- ✅ **完全掌控** - 内容、样式、数据都是我的
-- ✅ **版本管理** - Git 记录每一次修改
-- ✅ **免费稳定** - 不依赖第三方平台的商业模式
-- ✅ **可迁移** - 随时可以迁移到其他平台
+- ✅ **内容自主权** - 不依赖平台审核规则变化
+- ✅ **版本可追溯** - Git 记录每一次修改历史
+- ✅ **免费稳定** - 不受平台商业策略影响
+- ✅ **格式自由** - Markdown、代码块、数学公式随心使用
+
+### 同步策略
+
+1. **博客首发** - 完整版本在 GitHub Pages
+2. **平台分发** - 精简/适配版本同步到公众号、知乎等
+3. **互相引流** - 各平台指向主站，构建个人品牌矩阵
 
 ---
 
@@ -133,9 +141,16 @@ In an era dominated by short videos, I'm choosing to restart my blog because:
 - 📝 **Essays** - Tech thoughts, industry observations, personal growth
 - 📚 **Learning Series** - New tech notes, project reviews, knowledge systems
 
-### Reflections on AI Agent & Memory
+### Platform Strategy
 
-Working on AI Agent systems made me realize: **Memory design is about curation, not accumulation**. Our digital profiles are becoming extensions of ourselves. A blog is a form of digital asset that lasts.
+Planning to sync content across multiple platforms:
+
+- **GitHub Pages** - Primary site: full control, version management, long-term archive
+- WeChat Official Account - Reach readers, social sharing
+- Zhihu - SEO optimization, professional discussions
+- Xiaohongshu - Visual presentation, younger audience
+
+**Why GitHub Pages as primary?** Complete ownership of content, traceable versions via Git, free and stable, flexible formatting.
 
 ---
 
