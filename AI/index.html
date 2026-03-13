@@ -1,0 +1,21 @@
+---
+layout: page
+title: AI
+permalink: /AI/
+---
+
+## 🤖 AI 系列
+
+探索人工智能与大语言模型的实践应用。
+
+---
+
+{% for post in site.categories.AI %}
+### [{{ post.title }}]({{ post.url }})
+{{ post.date | date: "%Y-%m-%d" }}  
+{% if post.description %}{{ post.description }}{% endif %}
+
+---
+{% endfor %}
+
+*没有找到相关文章。*

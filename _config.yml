@@ -7,7 +7,7 @@
 
 # Site settings
 title: joyfun's blog
-email: joy@example.com
+email: dev@joyfun.net
 description: "A personal blog by joyfun - 记录想法、学习与生活"
 baseurl: ""
 url: "https://joyfun.github.io"
@@ -24,3 +24,10 @@ highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Categories
+categories:
+  - name: 随笔
+    url: /随笔/
+  - name: AI
+    url: /AI/

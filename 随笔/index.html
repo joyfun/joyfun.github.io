@@ -1,0 +1,21 @@
+---
+layout: page
+title: 随笔
+permalink: /随笔/
+---
+
+## 📝 随笔
+
+记录生活中的思考与感悟。
+
+---
+
+{% for post in site.categories.随笔 %}
+### [{{ post.title }}]({{ post.url }})
+{{ post.date | date: "%Y-%m-%d" }}  
+{% if post.description %}{{ post.description }}{% endif %}
+
+---
+{% endfor %}
+
+*没有找到相关文章。*

@@ -2,7 +2,7 @@
 layout: post
 title: "找坏球问题：n 次称量搞定 2ⁿ-1 个球"
 date: 2026-03-12 12:00:00 +0800
-categories: 数学
+categories: 随笔
 tags: [数论, 算法]
 description: "一个关于称重与二进制编码的巧妙证明"
 ---
